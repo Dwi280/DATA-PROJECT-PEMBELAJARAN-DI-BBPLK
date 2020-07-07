@@ -14,4 +14,4 @@ echo "<br>";
 // penulisan pada petik satu yang akan ditampilan tidak akan muncul
 echo '$b'; 
 
-?>
+?> 
