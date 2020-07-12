@@ -8,4 +8,4 @@ foreach($mobil as $x => $nilai_x) {
     echo "<br/>";
 }
 
-?>
+?>  

@@ -8,11 +8,18 @@
 </head>
 <body>
     <?php 
-    $namabarang =$_POST['namabarang'];
-    $hargabarang =$_POST['hargabarang'];
-    $jumlahbarang =$_POST['jumlahbarang'];
-    $totalharga = $hargabarang*$jumlahbarang;
+    $namabarang=$_POST['namabarang'];
+    $hargabarang=$_POST['hargabarang'];
+    $jumlahbarang=$_POST['jumlahbarang'];
+    $totalharga=$hargabarang*$jumlahbarang;
         setcookie("totalharga", $totalharga);
+    if ($jumlahbarang>=10) {
+        $diskon=0.05*$totalharga;
+    } else {
+        $diskon=0;
+    } 
+    $grandtotal=$totalharga-$diskon;
+    
     ?>
 
 <div class="container-fluid">
@@ -77,6 +84,18 @@
                 <label for="" class="col-sm-2 col-form-label">Total Harga</label>
                     <div class="col-sm-10">
                         <input type="" name="totalharga" class="form-control" value="<?= $totalharga; ?>" id="totalharga">
+                    </div>
+                </div>
+                <div class="form-group row" min="0">
+                <label for="" class="col-sm-2 col-form-label">Diskon</label>
+                    <div class="col-sm-10">
+                        <input type="" name="diskon" class="form-control" value="<?= $diskon; ?>" id="diskon">
+                    </div>
+                </div>
+                <div class="form-group row" min="0">
+                <label for="" class="col-sm-2 col-form-label">Grand Total</label>
+                    <div class="col-sm-10">
+                        <input type="" name="grandtotal" class="form-control" value="<?= $grandtotal; ?>" id="grandtotal">
                     </div>
                 </div>
                 <div class="form-group row" >

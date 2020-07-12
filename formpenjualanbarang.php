@@ -65,7 +65,7 @@
         <div class="c0l-12 col-md-8 col-lg-10 text-black mt-3" style="min-height: 800px">
         <h2 class="text-center"><b>FORM PENJUALAN</b></h2>
         <br>
-            <form action="tempatbayar.php" method="POST">
+            <form action="tempatbayar.php" method="POST" name="hitung">
                 <div class="form-group row">
                 <label for="text" class="col-sm-2 col-form-label">Nama Barang</label>
                     <div class="col-sm-10"> 

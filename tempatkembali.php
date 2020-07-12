@@ -15,7 +15,7 @@
     if ($totalharga>$uangbayar){
         echo "<script>alert('maaf uang bayar anda kurang')</script>" ;
         echo "<script>window.location.assign('tempatbayar.php')</script>";
-    } elseif ($totalharga<$uangbayar) {
+    } elseif ($totalharga<$uangbayar) {    
         echo "<script>alert('Terima kasih, uang anda kembali sebesar Rp.$uangkembali')</script>" ;
         echo "<script>window.location.assign('formpenjualanbarang.php')</script>"; 
     } else {
