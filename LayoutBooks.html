@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Books</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width:100%;
+          height:300px;
+          border-radius: 15px;
+        }
+        #warna {
+            background-color: #000066;
+        }
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+        }
+        .card1 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
+        background-color: cyan;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+        }
+        .img_flot_left{
+        float: left;
+        padding-left:2px;
+        }
+        #rightside_article{
+        font-family: arial;
+        font-size: 16px;
+        }
+        a.footer:link, a.footer:visited{
+        color:black;
+        text-decoration: none;
+        }
+        a.footer:hover{
+        text-decoration: underline;
+        }
+        a.benner:link, a.benner:visited{
+        color:black;
+        text-decoration: none;
+        }
+        a.benner:hover{
+            text-decoration: underline;  
+        }
+    </style>
+</head>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12  carousel slide" id="wattapad" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#wattpad" data-slide-to="0" class="active"></li>
+                <li data-target="#wattpad" data-slide-to="1"></li>
+                <li data-target="#wattpad" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h4>Hitungan mundur menuju Wattys 2020</h4>
+                    <p>Pendaftaran Wattys dibuka pada Senin, 13 Juli, 2020</p>
+                    <img src="assets/image/wattpad.jpg" >
+                </div>
+                <div class="carousel-item">
+                    <h4>Apa yang ada di balik hutan Dunkelheit?</h4>
+                    <p>Petualangan petarung misterius dan sang putri</p>
+                    <img src="assets/image/sampul2.jpg" >
+                </div>
+                <div class="carousel-item">
+                    <h4>Wren hanya ingin lulus tanpa masalah</h4>
+                    <p>Tapi kehadiran Asher mengacaukannya</p>
+                    <img src="assets/image/sampul4.jpg" >
+                </div>
+            </div>    
+            <a class="carousel-control-prev" href="#wattpad" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#wattpad" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#wattpad" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <nav class="navbar navbar-expand-sm bg-white navbar-dark sticky-top container-fluid border" style="min-height:50px">
+            <a class="navbar-brand"><img src="assets/image/wattapad.png" alt="" width="200px"></a> 
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                <ul class="navbar-nav mr-2"></ul>
+                <a class="btn btn-white btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Jelajahi
+                  </a>
+                
+                <ul class="navbar-nav mr-2"></ul>
+                <a class="btn btn-white btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Komunitas
+                </a>
+
+                <ul class="navbar-nav mr-5"></ul>
+                <form class="form-horizontal dropdown" role="form" name="search" action="/search/" autocomplete="off">
+                    <div class="loading-icon"></div>
+                        <a type="submit">
+                        <span class="fa fa-search fa-wp-neutral-1 " aria-hidden="true" style="font-size:18px;"><img src="assets/image/search.png" alt="fa fa-search fa-wp-neutral-1 " width="20px"></span>
+                        </a>
+                            <input id="search-query" placeholder="Telusuri" name="q" type="text" role="search" spellcheck="false" aria-label="Telusuri" value="">
+                            <input type="hidden" name="ref" value="1">
+                        <div class="dropdown-menu items" aria-label="search-dropdown">
+                        <ul aria-label="Lengkapi secara otomatis" class="autocomplete-item-container"></ul>
+                    </div>
+                    <div class="triangle"></div>
+                </form> 
+
+                <!-- memberikan jarak/space antara navbar collapse pada navbar form -->
+                <ul class="navbar-nav mr-auto"></ul>
+                <a class="btn btn-white btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tulis
+                </a>
+                <div class="col-lg-2 p-2 badge badge-pill badge-primary" id="warna">
+                    <a href="https://www.wattpad.com/premium" class="try-premium on-premium btn-primary" target="_blank" rel="noopener noreferrer">
+                        <div><svg width="20" height="20" viewBox="0 0 24 24" fill="#e81249" stroke="#e81249" stroke-width="" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round" class="zap-icon"><g><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></g></svg>
+                            Coba Premium
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        
+        <div class="c0l-12 col-md-8 col-lg-10 text-black " style="min-height: 100%">
+            <h2 class="greeting-text">Selamat datang, DwiRianaWijaya!</h2><hr>
+            <div>
+                <h4><b>Cerita Pilihan Untuk Kamu</b></h4><br>
+                <table>
+                <tr>
+                    <td> 
+                        <img class="mr-5" src="assets/image/sampul1.jpg" width="200px" height="250px" >
+                    </td>
+                    <td>
+                        <img class="mr-5" src="assets/image/sampul5.jpg" width="175px" height="250px">
+                    </td>
+                    <td>
+                        <img class="mr-5" src="assets/image/sampul6.jpg" width="175px" height="250px">
+                    </td>
+                    <td>
+                        <img class="mr-5" src="assets/image/sampul7.jpg" width="175px" height="250px">
+                    </td>
+                    <td>
+                        <img src="assets/image/sampul8.jpg" width="175px" height="250px">
+                    </td>
+                </tr>
+                </table>
+            </div>
+            <div class="card1">  
+                <h3><b>Paid Stories</b></h3>
+                <p>Dukung penulis favorit kamu secara finansial</p>
+                <div id="rightside_article" class="card">
+                    <article >
+                        <img class="img_flot_left mr-3" src="assets/image/sampul9.jpg" width="175px" height="250px">
+                        <h3><b>PUTRI PELANGI (SELESAI)</b></h3>
+                        <p>Linda Putri Pelangi yang bisa merasakan apa yang adik kembarnya rasakan harus berjuang mengalahkan dirinya sendiri saat saudara kembarnya, Lindi Putri Pelangi memaksa untuk menjadi lawan di kompetisi Submit Your Music sebagai vokalis sedangkan ia tidak bisa lagi bernyanyi.</p>
+                            <p>***</p>
+                        <p>Linda Putri Pelangi adalah mantan pemenang Indonesian Idol Junior di masa lalu. Ia tiba-tiba menghilang di puncak karir karena sebuah kecelakaan mobil yang membuatnya nyaris mati. Dalam kondisi kritis, Linda harus dioperasi untuk membuka saluran pernapasannya melalui tenggorokan. Rasa trauma membuat Linda percaya bahwa ia tidak lagi bisa bernyanyi.</p>         
+                    </article>
+                </div><br>
+                <table>
+                    <tr>
+                        <td> 
+                            <img class="mr-5" src="assets/image/sampul2.jpg" width="175px" height="250px" >
+                        </td>
+                        <td>
+                            <img class="mr-5" src="assets/image/sampul3.jpg" width="175px" height="250px">
+                        </td>
+                        <td>
+                            <img class="mr-5" src="assets/image/sampul10.jpg" width="175px" height="250px">
+                        </td>
+                        <td>
+                            <img class="mr-4" src="assets/image/sampul11.jpg" width="175px" height="250px">
+                        </td>
+                        <td>
+                            <img src="assets/image/sampul12.jpg" width="175px" height="250px">
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+
+            <div>
+            <h3><b>Completed Stories</b></h3>
+            <p>Binge from start to finish</p>
+                <div id="rightside_article" class="card">
+                    <article >
+                        <img class="img_flot_left mr-3" src="assets/image/sampul13.jpg" width="175px" height="250px">
+                        <h2><b>I'M HERE</b></h2>
+                        <p>[SUDAH DITERBITKAN]</p>
+
+                        <p> Park Seo Yeon dan Jeon Jungkook sudah bersahabat sejak kecil sampai Jungkook berubah menjadi si populer di kampusnya. Diam-diam Seo Yeon menyimpan perasaannya untuk Jungkook, tapi gadis itu hanya bisa menunggu dan mencintai dalam diam.
+                            
+                        Sementara bagi Jungkook, Seo Yeon adalah sahabat kecilnya yang sudah ia anggap seperti saudara sendiri. Sampai akhirnya Kim Taehyung masuk ke kehidupan mereka, barulah Jungkook mulai merasa tersingkir karena Taehyung berusaha memperjuangkan cintanya untuk Seo Yeon.</p> 
+                            
+                        <p> Akankah Jungkook menyadari arti hadir Seo Yeon di hidupnya sebelum semuanya terlambat?</p>   
+                    </article>
+                </div><br>
+                <table>
+                    <tr>
+                        <td> 
+                            <img class="mr-5" src="assets/image/sampul14.jpg" width="175px" height="250px" >
+                        </td>
+                        <td>
+                            <img class="mr-5" src="assets/image/sampul15.jpg" width="175px" height="250px">
+                        </td>
+                        <td>
+                            <img class="mr-5" src="assets/image/sampul16.jpg" width="175px" height="250px">
+                        </td>
+                        <td>
+                            <img class="mr-5" src="assets/image/sampul17.jpg" width="175px" height="250px">
+                        </td>
+                        <td>
+                            <img src="assets/image/sampul18.jpg" width="175px" height="250px">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+                <div class="col-12 col-md-4 col-lg-2 border text-black">
+                    <br><a class="benner" href="#">Profil Saya</a>
+                    <hr>
+                    <a class="benner" href="#">Kontak Masuk</a><br><br>
+                    <a class="benner" href="#">Notifikasi</a><br><br>
+                    <a class="benner" href="#">Kronologi Aktivitas</a><br><br>
+                    <a class="benner" href="#">Perpustakaan</a><br><br>
+                    <a class="benner" href="#">Undang Teman</a><br><br>
+                    <hr>
+                    <a class="benner" href="#">Bahasa : Indonesia</a><br><br>
+                    <a class="benner" href="#">Bantuan</a><br><br>
+                    <a class="benner" href="#">Pengaturan</a><br><br>
+                    <a class="benner" href="#">Logout</a><br><br>
+                </div>
+            <div class="col-12 bg-white text-black text-center" style="min-height: 50px">
+                <br>
+                <footer id="footer-container">
+                    <a class="footer mr-5" href="#">Kembali Aplikasi</a>  
+                    <a class="footer mr-5" href="#">Paid Stories</a> 
+                    <a class="footer mr-5" href="#">Coba Premium</a>
+                    <a class="footer mr-5" href="#">Dapatnya Aplikasi</a>
+                    <a class="footer mr-5" href="#">Bahasa</a> 
+                    <a class="footer mr-5" href="#">Penulis</a>|
+                    <a class="footer mr-5" href="#">Bisnis</a> 
+                    <a class="footer mr-5" href="#">Pekerjaan</a> 
+                    <a class="footer mr-5" href="#">Pers</a>
+                    <a class="footer mr-5" href="#">&copy;2020 Wattpad</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script> 
+
+</body>
+</html>
